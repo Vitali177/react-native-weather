@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   button: { 
-    color: '#FFF',
+    height: 50,
     width: '50%',
-    height: 50 
+    color: '#FFF'    
   },
   buttonActive: {    
     borderBottomColor: '#1E90FF', 

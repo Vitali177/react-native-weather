@@ -4,7 +4,6 @@ import { HistoryItem } from './HistoryItem';
 
 export const HistoryPage = ({ history, address, coords }) => {
   const [openedItem, setOpenedItem] = useState(null);
-
   const onItemPressed = (itemTime) => (openedItem !== itemTime) ? setOpenedItem(itemTime) : setOpenedItem(null); 
 
   return (

@@ -39,7 +39,6 @@ export default function App() {
       }
     }    
     if (coords) {
-      console.log('get weather');
       getWeather();
     }
   }, [coords]);
@@ -66,7 +65,6 @@ export default function App() {
   }
 
   if (!coords) {
-    console.log('get location');
     navigator.geolocation.getCurrentPosition(success, (err) => {
       throw new Error(`ERROR(${err.code}): ${err.message}`);
     });
@@ -89,7 +87,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 30,
     flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    backgroundColor: '#000'
   }
 });

@@ -23,6 +23,7 @@ export const HistoryItem = ({ address, item, coords, openedItem, onItemPressed }
   return (
     <TouchableOpacity 
       style={historyItemStyles} 
+      activeOpacity={.5}
       onPress={() => onItemPressed(item.time)}
     >
       <Text style={textItemStyles}>{address.split(',')[1]}</Text>
@@ -37,19 +38,19 @@ const styles = StyleSheet.create({
   historyItem: {
     paddingRight: 10,
     paddingLeft: 10,
+    marginBottom: 15,
+    height: 50,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 15,
-    height: 50,
     borderWidth: 1,
     borderColor: '#FFFF'
   },
   openedHistoryItem: {
     paddingVertical: 10,
+    paddingLeft: 20,
     height: 160,
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
     alignItems: 'center'
   },
   textItem: {
