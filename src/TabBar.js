@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     paddingBottom: 10,
+    alignItems: 'center',
     textAlign: 'center',
     color: '#FFF',
     fontSize: 24
   },
   buttonTextFirst: {
-    height: '80%',
     borderRightWidth: 1, 
     borderRightColor: '#333', 
   }
