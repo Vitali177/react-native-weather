@@ -24,12 +24,14 @@ export const TabBar = ({ tab, onTabPressed }) => {
 
 const styles = StyleSheet.create({
   tabBar: {
+    marginTop: 20,
     width: '100%',
     flexDirection: 'row'
   },
   button: { 
-    height: 50,
+    height: 55,
     width: '50%',
+    justifyContent: 'center',
     color: '#FFF'    
   },
   buttonActive: {    
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     textAlign: 'center',
     color: '#FFF',
-    fontSize: 24
+    fontSize: 20
   },
   buttonTextFirst: {
     borderRightWidth: 1, 

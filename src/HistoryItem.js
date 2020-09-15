@@ -36,8 +36,7 @@ export const HistoryItem = ({ address, item, coords, openedItem, onItemPressed }
 
 const styles = StyleSheet.create({
   historyItem: {
-    paddingRight: 10,
-    paddingLeft: 10,
+    paddingHorizontal: 10,
     marginBottom: 15,
     height: 50,
     flexDirection: 'row',
