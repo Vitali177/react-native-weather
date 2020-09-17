@@ -22,6 +22,7 @@ export const HistoryPage = ({ history, address, coords }) => {
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 30,
+    paddingBottom: 50,
     width: '100%'
   }
 });

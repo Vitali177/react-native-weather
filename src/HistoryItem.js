@@ -6,7 +6,7 @@ export const HistoryItem = ({ address, item, coords, openedItem, onItemPressed }
   const improveNum = num => (num < 10) ? `0${num}` : num;
   
   const textDate = `${date.getFullYear()}-${improveNum(date.getMonth() + 1)}-${improveNum(date.getDate())}`;
-  const textTime = `${improveNum(date.getHours())}:${improveNum(date.getDate())}:${improveNum(date.getSeconds())}`;
+  const textTime = `${improveNum(date.getHours())}:${improveNum(date.getMinutes())}:${improveNum(date.getSeconds())}`;
   
   const historyItemStyles = (openedItem === item.time) ? {...styles.historyItem, ...styles.openedHistoryItem} : styles.historyItem;
   const textItemStyles = (openedItem === item.time) ? {...styles.textItem, ...styles.openedTextItem} : styles.textItem;

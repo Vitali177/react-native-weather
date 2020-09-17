@@ -22,7 +22,6 @@ export default function App() {
       const res = await fetch(url);
       const data = await res.json();
       
-      data.time = await new Date();
       await setWeather(data.currently);
 
       if (await AsyncStorage.getItem('weather')) {
